@@ -1,0 +1,188 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+	font-weight: 400;
+
+}
+/*header css*/
+
+.line {
+	border: solid white;
+	border-width: 1px 0 0;
+	clear: both;
+	height: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	float: left;
+}
+
+nav ul {
+	margin: 25px;
+	padding: 0;
+	list-style: none; 
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 30px;
+	padding-top: 20px;
+
+	position: relative; 
+
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+
+nav a::before {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+	width: 0%;
+
+	transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+#header {
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(img/port2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.user-box {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.user-box img {
+	border-radius: 50%;
+	width: 250px; 
+	border: 2px solid #6caed5;
+
+}
+
+.user-box h1 {
+	color: #fff;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.user-box p {
+	color: #fff;
+}
+
+
+
+/*styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin: 20px;
+}
+
+/*needs to be more specific with selector*/
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: white;
+}
+
+.img-darken {
+    transition: .5s;
+    filter: brightness(10%);
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black
+}
+
+
+/*about*/
+
+.social {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.middle {
+	font-size: 40px;
+	top: 50%;
+	width: 75%;
+	text-align: center;
+}
+
+.middle-git {
+	font-size: 40px;
+	top: 50%;
+	width: 75%;
+	text-align: center;
+}

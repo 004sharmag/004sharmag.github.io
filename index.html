@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="text/css" href="img/smoke.png">
+	<title>Gaurav Sharma</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<section id="header">
+		<div class="container text-center">
+			<div class="user-box">
+				<img src="img/profile.jpg">
+				<h1>Gaurav Sharma</h1>
+				<hr class="line">
+				<h2 style="color: white">Software Engineer in the making.</h2> 
+				<p>I am a passionate developer, problem solver, & people person. A good day for me is setting a new goal after reaching my last one. My hobbies include learning new technologies, hiking, sports, & meeting new people. Scroll down for more information & please follow the links for my LinkedIn and Github to learn more. Thanks for visiting.</p>
+				<div class="social">
+					<div class="middle">
+						<a href="https://www.linkedin.com/in/gaurav-sharma-15311b167/"><i class="fab fa-linkedin"></i></a>
+					</div>
+					<div class="middle-git">
+						<a href="https://github.com/004sharmag"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<div class="content-wrapper">		<!-- master wrapper -->
+			<div class="portfolio-items-wrapper">  <!-- collection wrapper -->
+				
+				<div class="portfolio-item-wrapper">	<!-- single wrapper -->
+					<div class="portfolio-img-background" style="background-image:url(img/back.jpg)">
+					</div>
+
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="img/myexp.png">
+						</div>
+			
+						<div class="subtitle">
+							My current experience includes an engineering internship with Aunt Bertha which is a local Austin company that manages a search engine for social services, Helpdesk support for SailPoint Technologies, & tutoring for GradePower Learning. While my technical experience is not at a professional level, I am always looking for new challenges to learn.
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">	<!-- single wrapper -->
+					<div class="portfolio-img-background" style="background-image:url(img/hike.jpg)"></div>
+
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="img/academics.png">
+						</div>
+			
+						<div class="subtitle">
+							I am a Computer Science major currently learning both front end & back end development. My academic path has made me a curious person always wanting to learn. Aside from Computer Science I love learning more about Biology, History, & Psychology. 
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">	<!-- single wrapper -->
+					<div class="portfolio-img-background" style="background-image:url(img/port3.jpg)"></div>
+
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="img/hob.png">
+						</div>
+			
+						<div class="subtitle">
+							My professional hobbies include learning more back end development & how to use both ends of development to create a faster, more polished, & more responsive application. Currently I am learning to build back end applications with Python & Java as well as sharpening my front end technologies knowledge. 
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">	<!-- single wrapper -->
+					<div class="portfolio-img-background" style="background-image:url(img/port4.jpg)"></div>
+
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="img/fut.png">
+						</div>
+			
+						<div class="subtitle">
+							My goal is to become a contributing member of an engineering team that is passionate about their product so that I can better apply my skills in the real world. My overall goal is to become the best possible engineer I can be. I believe with my strong work ethic & passion that I am on my way to achieving this goal. 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<script> 
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+	portfolioItems.forEach(portfolioItem => {	
+		portfolioItem.addEventListener('mouseover', () => {	
+			portfolioItem.childNodes[3].classList.add('img-darken');
+		})	
+
+		portfolioItem.addEventListener('mouseout', () => {	
+			portfolioItem.childNodes[3].classList.remove('img-darken');
+		})	
+	})
+</script>
+</html>
